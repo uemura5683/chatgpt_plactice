@@ -1,0 +1,35 @@
+<head>
+    <style>
+        .slider {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: slide 10s linear infinite;
+        }
+        @keyframes slide {
+            0% {left: 0;}
+            20% {left: 0;}
+            25% {left: -300px;}
+            45% {left: -300px;}
+            50% {left: -600px;}
+            70% {left: -600px;}
+            75% {left: -900px;}
+            95% {left: -900px;}
+            100% {left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="image.png" />
+        <img src="image.png" />
+        <img src="image.png" />
+    </div>
+</body>
